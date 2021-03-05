@@ -49,12 +49,12 @@ html{
 	display: none;
 }
 
+
 body{
 
 	margin: 0;
 	padding: 0;
 	background: white;
-	
 	background-color: black;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
