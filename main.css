@@ -1,3 +1,26 @@
+/*
+
+Notes:
+
+
+***MOBILE NOTES***
+
+Make nav bar more mobile friendly
+- smaller banner
+- smaller text
+- add sticky scroll position
+
+Have animated background not read as a video
+
+Shrink works icons. Currently too big
+
+
+
+
+
+
+*/
+
 @-ms-viewport{
 	width: device-width;
   }
@@ -61,24 +84,6 @@ body{
 	background-repeat: no-repeat;
 }
 
-.page_header{
-	padding: 40px 10vw;
-	margin: 0;
-	display: block;
-	font-size: 20px;
-	color: white;
-
-	background-color: red;
-	overflow: hidden;
-	position: relative;
-}
-
-.page_header h2, p{
-	display: block;
-	position: relative;
-	z-index: 2;
-
-}
 
 
 .video-container{
@@ -154,6 +159,7 @@ header ul{
  header li{
 
 	top: 0;
+	
 	margin: 20px 10px;
 	padding: 0 ;
 
@@ -303,63 +309,7 @@ header .icon a{
 
 
 
-@media screen and (max-width: 900px){
-	
-	body{
-		/*background-color: red;*/
-	}
 
-	.social_icons{
-		display: none;
-	}
-
-}
-
-@media screen and (max-width: 750px){
-	body{
-		/*background-color: green;*/
-	}
-
-	.links{
-		display: none;
-	}
-	header{
-		height: 150px;
-
-	}
-
-	nav{
-		text-align: center;
-		display: inline-block;
-		position: relative;
-	
-	}
-	.mobile_links{
-		top: 30px;
-		visibility: visible;
-		width: 100vw;
-		/*padding: 0 0 0 3vw;*/
-		margin: 0;
-		text-align: center;
-		display: inline-block;
-		position: relative;
-
-		background-color: rgb(0,0,0, 0.5);
-
-	}
-
-	.mobile_links li{
-		margin: 10px 15px;
-
-	}
-
-	html{
-		scroll-behavior: smooth;
-		scroll-padding-top: 150px;
-	}
-
-
-}
 
 /* FOOTER */
 
@@ -460,7 +410,7 @@ footer .group, .link {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+	/*width: 100vw;*/
 
 	display: inline-block;
 	position: relative;
@@ -676,4 +626,81 @@ li:hover .tag{
 	opacity: 1;
 	font-size: 22px;
 	transition: 150ms;
+}
+
+@media screen and (max-width: 900px){
+	
+	body{
+		/*background-color: red;*/
+		overflow-x: hidden;
+	}
+
+	.social_icons{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 750px){
+	body{
+		/*background-color: green;*/
+	}
+
+	.links{
+		display: none;
+	}
+	header{
+		height: 141px;
+	}
+
+	nav{
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		
+	
+	}
+	.mobile_links{
+		top: 25px;
+		visibility: visible;
+		width: 100%;
+		padding: 0 0 0 3vw;
+		margin: 0;
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		background-color: rgb(0,0,0, 0.5);
+
+	}
+
+	.mobile_links li{
+		margin: 10px 10px;
+
+	}
+
+	header a{
+		font-size: 18px;
+
+		/*background-color: black;*/
+	}
+
+	html{
+		scroll-behavior: smooth;
+		scroll-padding-top: 145px;
+	}
+
+	.works{
+
+		/*background-color: green;*/
+		overflow-x: auto;
+
+	}
+	.works ul li{
+		width: 150px;
+		height: 230px;
+	}
+
+
+
 }
