@@ -1,22 +1,22 @@
 /*
 
 Notes:
+***DESKTOP***
+Streamline code.
+- Have the icon styling for the works icons be more versitile beyond only the works tab. That way the effect can be applied to other sections like the updates tab, gallery, shop,  ect.
+- possibly redo site styling to be more efficient/ remove redundancies
 
+make temp webpages for each works tab
+
+make updates section 
+
+have individual css pages for each group
 
 ***MOBILE NOTES***
 
-Make nav bar more mobile friendly
-- smaller banner
-- smaller text
-- add sticky scroll position
+Have the section hover effect work when on mobile (Have section be highlighted when active instead of hover)
 
-Have animated background not read as a video
-
-Shrink works icons. Currently too big
-
-
-
-
+Have animated background not read as a video on mobile
 
 
 */
@@ -56,19 +56,21 @@ body{
 	padding: 0;
 	background: white;
 	background-color: black;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-family: 'Londrina Solid', cursive;
+	/*font-family: 'Oswald', Arial, Helvetica, sans-serif;*/
 	overflow-x: hidden;
 	
 }
 
 .about_photo{
-	margin: 0 10vw;
+	margin: 0 20px;
 	position: relative;
-	background-image: url("trc_photo.png");
+	display: inline-block;
+
 	background-size: 325px;
-	width: 325px;
-	height: 400px;
-	background-color: white;
+	width: 350px;
+	height: 100%;
+	background-color: red;
 }
 
 
@@ -103,15 +105,14 @@ body{
 	height: 100vh;
 	opacity: 0.5;
 }
+
 /* HEADER */
-
-
 
 
 header{
 	
 	/*position: sticky;*/
-	position: fixed !important;
+	position: fixed;
 	z-index: 500;
 	width: 100%;
 	height: 100px;
@@ -120,15 +121,15 @@ header{
 	margin: 0;
 	padding: 0;
 
-	background-image: linear-gradient( to right, #2F9AC4, #006D96);
+	background-image: linear-gradient( to right, #2F9AC4, #006d96);
 	color: white;
 
-	overflow: hidden;
+	/*overflow: hidden;*/
 		
 }
 
 header nav{
-	top: 0;
+	top: 15px;
 	height: 100px;
 	width: 100%;
 	padding: 0;
@@ -143,8 +144,25 @@ header nav{
 
 }
 
+.nav_links{
+	margin: 0 0 0 330px ;
+}
+
+.nav_section{
+	top: 20px;
+	width: 94vw;
+	padding: 0;
+
+
+	display: block;
+	position: absolute;
+	list-style: none;
+	/*background-color: rgb(0,0, 255, 0.5);*/
+}
+
 header ul{
-	top: 15px;
+	/*top: 15px;*/
+	top: 0;
 	margin: 0 0 0 3vw;
 	padding: 0;
 
@@ -161,7 +179,8 @@ header ul{
 
 	top: 0;
 	
-	margin: 20px 10px;
+	margin: 0 0 0 20px;
+
 	padding: 0 ;
 
 	display: inline-block;
@@ -181,7 +200,7 @@ header a{
 
 	text-decoration: none;
 	transition: 150ms;
-	font-size: 20px;
+	font-size: 25px;
 	
 	/*font-family: 'Oswald';*/
 	text-transform: Uppercase;
@@ -209,12 +228,12 @@ header ul:hover .logo a{
 
 .social_icons{
 	float: right;
-	margin: 0 3vw 0 0;
+	/*margin: 0 3vw 0 0;*/
 
 }
 
 header .logo{
-
+	z-index: 1000;
 	vertical-align: top;
 	margin: 0;
 	padding: 0 15px 0 0;
@@ -255,8 +274,8 @@ header .logo a{
 
 
 header .icon{
-	margin: 11px 0;
-	padding: 15px 7.5px;
+	margin: 6px 0;
+	padding: 0 0 0 15px;
 	width: 20px;
 	height: 20px;
 }
@@ -277,6 +296,7 @@ header .icon a{
 
 
 	text-indent: -5000px;
+
 }
 
  .youtube a{
@@ -399,10 +419,12 @@ footer .group, .link {
 }
 
 .store{
+	display: flex;
 	margin: 0 10vw;
-	height: 400px;
-	background-color: white;
-	opacity: 0.7;
+	min-height: 400px;
+	background-color: rgb(255,255,255, 0.7);
+	opacity: 1;
+	
 }
 
 /* WORKS */
@@ -410,12 +432,12 @@ footer .group, .link {
 .works {
 	overflow: hidden;
 	margin: 0 10vw;
-	padding: 0;
+	padding: 0 10px;
 	/*width: 100vw;*/
 
 	display: inline-block;
 	position: relative;
-	background-color: red; 
+	/*background-color: red; */
 }
 
 .works ul{
@@ -424,43 +446,19 @@ footer .group, .link {
 	display: inline-block;
 	position: relative;
 	margin: 0;
-	/*background-color: green; */
+	/*background-color: green;*/
 }
 
 .works ul li{
 	margin:  0 ;
 	padding: 0;
-	width: 195px;
-	height: 300px;
+	width: 12.5vw;
+	height: 20vw;
 	display: inline-block;
 	position: relative;
 	background-size: 40vw;
 	/*background-color: blue; */
 	transition: 150ms;
-}
-
-
-.description{
-	/*visibility: hidden;*/
-	width: 300px;
-	height: 28vw;
-	left: 105%;
-	overflow: hidden;
-	/*background-color: red;*/
-	transition: 150ms;
-}
-
-.description p, h1{
-	padding: 5px;
-	margin:0;
-}
-.description p{
-	text-align: justify;
-	text-justify: inter-character;	
-}
-
-.description h1{
-	font-size: 30px;
 }
 
 .works_link{
@@ -498,8 +496,82 @@ footer .group, .link {
 	transition: 150ms;
 }
 
+.description{
+	/*visibility: hidden;*/
+	display: inline-block;
+	position: relative;
+	max-width: 300px;
+	min-width: 100px;
+	margin: 20px;
+	font-size: 18px;
+
+	/*left: 105%;*/
+	/*overflow: hidden;*/
+	/*background-color: red;*/
+	transition: 150ms;
+}
+
+.description p, h1{
+	padding: 5px;
+	margin:0;
+}
+.description p{
+	text-align: justify;
+	text-justify: inter-character;	
+}
+
+.description h1{
+	font-size: 30px;
+}
+
+
+
+/* UPDATES */
+
+.updates{
+	background-color: red;
+
+	margin: 0 10vw;
+	padding: 0;
+
+
+	display: inline-block;
+	position: relative;
+}
+
+.updates ul li{
+	margin:  0;
+	padding: 0;
+	width: 450px;
+	height: 300px;
+	display: inline-block;
+	position: relative;
+	background-size: 40vw;
+	background-color: blue; 
+	transition: 150ms;
+}
+
+.update_tab{
+
+	background-color: green;
+
+	border-radius: 10px;
+	display: block;
+	position: absolute;
+
+	top: 2.5%;
+	left: 2.5%;
+	width: 95%;
+	height: 95%;
+	transition: 150ms;
+	background-size: 100% 100%;
+}
 
 /* MISC. */
+
+.padding{
+	height:100px;
+}
 
 .vidWindow {
 	padding: 0;
@@ -527,7 +599,13 @@ video {
 }
 
 
-
+.contact{
+	display: flex;
+	position: relative;
+	margin: 10px 10vw;
+	background-color: rgb(255,255,255, 0.7);
+	opacity: 1;
+}
 
 
 .contact-form{
@@ -560,7 +638,7 @@ video {
 
 .title{
 	margin: 10px 10vw 0 10vw;
-	font-size: 20px;
+	font-size: 25px;
 	color: white;
 	display:inline-block;
 	/*background-color: green;*/
@@ -591,7 +669,7 @@ video {
 	transition: 500ms;
 }
 
-.section:hover h2{
+.section:hover h2, .video_tab:hover .video_info{
 	opacity: 1;
 	transition: 150ms;
 }
@@ -629,38 +707,274 @@ li:hover .tag{
 	transition: 150ms;
 }
 
-@media screen and (max-width: 900px){
-	
-	body{
-		/*background-color: red;*/
-		overflow-x: hidden;
-	}
 
-	.social_icons{
-		display: none;
+.burger{
+	display: none;
+}
+
+.overlay{
+	z-index: 0;
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	top:0;
+	opacity: 0;
+	background-color: white;
+	transition: 0.5s ease-out;
+}
+.overlay_active{
+	z-index: 400;
+	opacity: 0.5;
+}
+
+/* THEME */
+
+.theme_title{
+	text-align: center;
+	padding: 0;
+	margin: 0 10vw;
+	
+
+
+	z-index: 100;
+	color:#ffffff;
+	/*background-color: red;*/
+	position: absolute;
+	list-style: none;
+	font-size: 35px;
+	left: 10px;
+	filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.7));
+
+}
+
+.theme_title li{
+	margin: 20px 0;
+	width: 40vw;
+}
+
+
+
+.theme_logo{
+text-align: center;
+	background-position: center;
+	
+	background-repeat: no-repeat;
+	position: relative;
+	
+	background-size: contain;
+
+	width: 35vw;
+	text-indent: -5000px;
+	/*background-color: green;*/
+}
+
+.title_gradient{
+	z-index: 50;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 25%,  rgba(0, 0, 0, 0) );
+}
+
+.line{
+	background-color: white;
+	height: 2px;
+	font-size: 0;
+	padding: 0;
+	margin:0;
+}
+
+/* VIDEO TAB */
+
+.video_tab{
+	/*opacity: 0.7;*/
+	margin: 1vw 10vw;
+	color: white;
+	/*background-color: green;*/
+	width: 100vw;
+	display: flex;
+}
+
+.video_info{
+	margin:0;
+	font-size: 25px;
+	list-style: none;
+	opacity: 0.7;
+	transition: 150ms;
+
+}
+
+.video_player{
+	width: 32vw;
+	height:18vw;
+}
+
+@media screen and (max-width: 1600px){
+	.works ul li{
+		width: 195px;
+		height: 300px;
+
 	}
 
 }
 
-@media screen and (max-width: 750px){
+
+@media screen and (max-width: 1100px){
+
+	.social_icons{
+		margin: 0 0 0 350px ;
+	}
+	.nav_links{
+		float: right;
+	}
+
+	.nav_section{
+		top: 5px;
+		/*width: 740px;*/
+		height: 60px;
+		padding: 0;
+		/*background-color: rgb(0,0, 255, 0.5);*/
+	}
+	
+	body{
+		/*background-color: red;*/
+		/*overflow-x: hidden;*/
+	}
+
+
+}
+
+@media screen and (max-width: 830px){
+	.title{
+		font-size: 20px;
+	}
+
+	.overlay{
+		display: block;
+	}
+	.contact{
+		display: inline-block;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.body_hidden{
+		overflow-y: hidden;
+	}
+
+	header .logo{
+		z-index: 1000;
+		vertical-align: top;
+		margin: 0;
+		padding: 0 15px 0 0;
+		width: 200px;
+		height: 70px;
+	}
+	.description{
+		width: 70vw;
+	}
+	.about_photo{
+		width: 70vw;
+	}
+
+	.nav_section{
+		left: 40vw;
+		padding: 0;
+		margin: 0;
+		top: 55px;
+
+		background-color: black;
+		height: 100vh;
+		width: 100vw;
+		
+		display: block;
+		position: absolute;
+		list-style: none;
+		flex-direction: column;
+		
+		transform: translateX(100%);
+		transition: transform 150ms ease-out;
+	}
+
+
+	.nav_links{
+		float: none;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		/*background-color: green;*/
+		margin: 0;
+	}
+
+	.nav_links li a{
+		font-size: 25px;
+		padding: 10px 0;
+	}
+
+	.social_icons{
+		float: none;
+		left: 5px;
+		padding: 10px 0;
+		margin: 0;
+		
+		position: relative;
+		display: flex;
+
+		/*background-color: orange;*/
+	}
+
+	.burger{
+		float: right;
+
+		top: 0;
+		
+		display: inline-block;
+		margin: 0 3vw 0 0;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+	}
+
+	.burger:hover{
+		cursor: pointer;
+	}
+/*
+	.burger_line{
+		padding: 0;
+		margin: 0 0 5px 0;
+		display: block;
+		position: flex;
+		width: 100%;
+		height: 5px;
+		background-color: white;
+	}
+*/
 	body{
 		/*background-color: green;*/
 	}
 
 	.links{
-		display: none;
+		/*display: none;*/
 	}
+	
 	header{
-		height: 141px;
-	}
+		height: 70px;
 
+	}
+	.padding{
+		height: 70px;
+	}
+/*
 	nav{
 		text-align: center;
 		display: inline-block;
 		position: relative;
-		
 	
-	}
+	}*/
 	.mobile_links{
 		top: 25px;
 		visibility: visible;
@@ -671,7 +985,7 @@ li:hover .tag{
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
-		background-color: rgb(0,0,0, 0.5);
+		/*background-color: rgb(0,0,0, 0.5);*/
 
 	}
 
@@ -682,27 +996,67 @@ li:hover .tag{
 
 	header a{
 		font-size: 18px;
-
 		/*background-color: black;*/
 	}
 
 	html{
 		scroll-behavior: smooth;
-		scroll-padding-top: 145px;
+		scroll-padding-top: 70px;
 	}
 
 	.works{
 
-		background-color: green;
+		/*background-color: green;*/
 		overflow-x: auto;
 
 	}
 	.works ul li{
-		width: 40vw;
-		height: 61vw;
+		width: 36.25vw;
+		height: 58vw;
 
 	}
 
+}
 
+.nav_active{
+	transform: translateX(0%);
+}
 
+.page_header{
+	/*padding: 40px 10vw;*/
+	margin: 0;
+	display: block;
+	/*font-size: 20px;*/
+	color: white;
+
+	background-color: red;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 100px;
+}
+
+.page_header h2, p{
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+.color-overlay{
+	z-index: 1;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+}
+
+.page_header{
+	z-index: 1;
+	background-image: none;
+	position: relative;
+	background-color: red;
+	align-items: center;
 }

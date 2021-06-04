@@ -6,6 +6,10 @@
 		<title>Home | TheRoboticCheese </title>
         <link href= "main.css" rel="stylesheet"type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
         <link rel= "shortcut icon" type ="image/png" href="logoIcon.png">
 	</head>
 
@@ -14,133 +18,164 @@
             <nav>
                 <ul>
                     <li class="logo"><a href="#home" class="selected">TheRoboticCheese Logo</a></li>
+                </ul>
 
-                    <li class="links"><a href="#home" class="selected">Home</a></li>
-                    <li  class="links"><a href="#works" class="selected">Works</a></li>
-                    <li class="links"><a href="#updates" class="selected">Updates</a></li>
-                    <li class="links"><a href="#contact" class="selected">Contact & About</a></li>
+                <ul class="burger">
+                    <li class="burger_line">
+                    </li><li class="burger_line">
+                    </li><li class="burger_line"></li>
                 </ul>
                 
-                <ul class="social_icons">
-                    <li class="icon youtube"><a href="https://www.youtube.com/user/TheRoboticCheese" target="_blank">Youtube</a></li>
-                    <li class="icon twitter"><a href="https://twitter.com/TheRoboCheese" target="_blank">Twitter</a></li>
-                    <li class="icon instagram"><a href="https://www.instagram.com/theroboticcheese/" target="_blank">Instagram</a></li>
-                    <li class="icon patreon"><a href ="https://www.patreon.com/theroboticcheese" target="_blank">Patreon</a></li>
-                </ul> 
 
-                <ul class="mobile_links">
-                    <li><a href="#home" class="selected">Home</a></li>
-                    <li ><a href="#works" class="selected">Works</a></li>
-                    <li ><a href="#updates" class="selected">Updates</a></li>
-                    <li ><a href="#contact" class="selected">Contact & About</a></li>
+                <ul class = "nav_section">
+                    <ul class = "nav_links">
+                        <li class="links"><a href="#home" class="selected">Home</a></li>
+                        <li  class="links"><a href="#works" class="selected">Works</a></li>
+                        <li class="links"><a href="#updates" class="selected">Updates</a></li>
+                        <li class="links"><a href="#contact" class="selected">Contact & About</a></li>
+                    </ul>
+                    <ul class = "social_icons">
+                        <li class="icon youtube"><a href="https://www.youtube.com/user/TheRoboticCheese" target="_blank">Youtube</a></li>
+                        <li class="icon twitter"><a href="https://twitter.com/TheRoboCheese" target="_blank">Twitter</a></li>
+                        <li class="icon instagram"><a href="https://www.instagram.com/theroboticcheese/" target="_blank">Instagram</a></li>
+                        <li class="icon patreon"><a href ="https://www.patreon.com/theroboticcheese" target="_blank">Patreon</a></li>
+                    </ul>
                 </ul>
+
+                
                 
                 
             </nav>
 
+            
 
         </header>
-        <div class="site">
-            <div id="home" class="vidWindow">
-                <video autoplay loop muted>
-                    <source src="video.mp4" type="video/mp4">
-                </video>
-            </div>
+        <div class = "overlay"></div>
+        <div class="padding"></div>
+        <div id="home" class="vidWindow">
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
 
-            <div id="works" class="section">
-                <div>
-                    <div class="title">
-                        <h2><a href="works.html">Works</a></h2>
-                        <p class = "desc"><a href="works.html">Projects by yours truly</a></p> 
-                    </div>
-                </div>
-                <div class = "works">
-                    <ul>
-                        <li>
-                            <div class = "tag"> NEW!</div>
-                            <div class ="works_link video_icon1"><a href="https://www.youtube.com/"></a></div>
+        
 
-                        </li><li>
-                            
-                            <div class ="works_link video_icon2"><a href="supermega.html"></a></div>          
 
-                        </li><li>      
-
-                            <div class ="works_link video_icon3"><a href="https://www.youtube.com/playlist?list=PL4XQrEhQ7wlFg5zDVl72KDwdUiaA1pMul"></a></div>              
-                        </li>
-                    </ul>
+        <div id="works" class="section">
+            <div>
+                <div class="title">
+                    <h2><a href="#works">Works</a></h2>
+                    <p class = "desc"><a href="#works">Projects by yours truly</a></p> 
                 </div>
             </div>
-            <!--
-            <div class = "section">
-                <div>
-                    <div class="title">
-                        <h2><a href="store.html">Store</a></h2>
-                        <p class = "desc"><a href="store.html">Stuff you can buy</a></p> 
-                    </div>
-                </div>    
-                <div class="store"></div>
-            </div>
-            -->
-            <div id="updates" class = "section">
-                <div>
-                    <div class="title">
-                        <h2><a href="updates.html">Updates</a></h2>
-                        <p class = "desc"><a href="updates.html">What I'm up to</a></p> 
-                    </div>
-                </div> 
-                <div class="store"></div>   
-            </div>
-            
-            <div id="contact" class = "section">
-                <div>
-                    <div class="title">
-                        <h2><a href="about.html">Contact & About</a></h2>
-                        <p class = "desc"><a href="about.html">I make drawings and cartoons. N'uff said.</a></p> 
-                    </div>
-                </div>    
-                <div class="store">
+            <div class = "works">
+                <ul>
+                    <li>
+                        <div class = "tag"> NEW!</div>
+                        <div class ="works_link video_icon1"><a href="usagiandkaeru.html"></a></div>
 
-                    <p>Hi! I'm TheRoboticCheese, an independent 2D Animator and Illustrator that makes cartoons in my spare time. </p>
-                    <p>Email | theroboticcheese@gmail.com</p>
-                </div>
-            </div>
+                    </li><li>
+                        
+                        <div class ="works_link video_icon2"><a href="supermega.html"></a></div>          
 
-            <footer>
-                <ul class="footeralign">
-                    <li class= "group">
-                        EMAIL
-                        <ul>
-                            <a>theroboticcheese@gmail.com</a>
-                        </ul>
-                    </li>
-                    <li class= "group">
-                        FOLLOW
-                        <ul class="linkul">
-                            <li class= "link"><a href="https://www.youtube.com/user/TheRoboticCheese">Youtube</a></li>
-                            <li class= "link"><a href="https://twitter.com/TheRoboCheese">Twitter</a></li>
-                            <li class= "link"><a href="https://www.instagram.com/theroboticcheese/">Instagram</a></li>
-                        </ul>
-                    </li>
-                    <li class= "group">
-                        SUPPORT
-                        <ul>
-                            <li><a href ="https://www.patreon.com/theroboticcheese">patreon.com/theroboticcheese</a></li>
-                        </ul>
-                    </li>
-                    <li class= "group">
-                        <a>&copy; 2020 TheRoboticCheese.com</a>
-                        <ul>
-                            <li><a>All Rights Reserved.</a></li>
-                        </ul>
+                    </li><li>      
 
+                        <div class ="works_link video_icon3"><a href="gamegrumps.html"></a></div>              
                     </li>
                 </ul>
-            </footer>
-        <div>
+            </div>
+        </div>
+<!--
+        <div class = "section">
+            <div>
+                <div class="title">
+                    <h2><a href="store.html">Store</a></h2>
+                    <p class = "desc"><a href="store.html">Stuff you can buy</a></p> 
+                </div>
+            </div>    
+            <div class="store"></div>
+        </div>
+
+        <div id="updates" class = "section">
+            <div>
+                <div class="title">
+                    <h2><a href="updates.html">Updates</a></h2>
+                    <p class = "desc"><a href="updates.html">What I'm up to</a></p> 
+                </div>
+            </div> 
+            
+            <div class="store">
+                
+                <ul>
+                    <li>
+                        <div class = "works_link update_tab"> <a>TEST</a></div>
+                        <div class = "works_link update_tab"></div>
+                        <div class = "works_link update_tab"></div>
+                    </li>
+                </ul>
+                
+            </div>   
         
+        </div>
+    -->
+        <div id="contact" class = "section">
+            <div>
+                <div class="title">
+                    <h2><a href="about.html">Contact & About</a></h2>
+                    <p class = "desc"><a href="about.html">I make drawings and cartoons. N'uff said.</a></p> 
+                </div>
+            </div>    
+
+            <div class="contact">
+                <div>
+                    <p><img src="trc_photo.png" class ="about_photo"></p>
+                </div>
+                <div class= "description">
+                    <p>Hi! I'm TheRoboticCheese, an independent 2D Animator and Illustrator that makes cartoons in my spare time. </p>
+                    <!--<p>While I am best known for my Game Grumps fan animations, I am currently working on an original project; <i>The Adventures of Usagi and Kaeru</i></p>-->
+                    <p>Email | theroboticcheese@gmail.com</p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+        <footer>
+            <ul class="footeralign">
+                <li class= "group">
+                    EMAIL
+                    <ul>
+                        <a>theroboticcheese@gmail.com</a>
+                    </ul>
+                </li>
+                <li class= "group">
+                    FOLLOW
+                    <ul class="linkul">
+                        <li class= "link"><a href="https://www.youtube.com/user/TheRoboticCheese">Youtube</a></li>
+                        <li class= "link"><a href="https://twitter.com/TheRoboCheese">Twitter</a></li>
+                        <li class= "link"><a href="https://www.instagram.com/theroboticcheese/">Instagram</a></li>
+                    </ul>
+                </li>
+                <li class= "group">
+                    SUPPORT
+                    <ul>
+                        <li><a href ="https://www.patreon.com/theroboticcheese">patreon.com/theroboticcheese</a></li>
+                    </ul>
+                </li>
+                <li class= "group">
+                    <a>&copy; 2020 TheRoboticCheese.com</a>
+                    <ul>
+                        <li><a>All Rights Reserved.</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </footer>
+
+
     </body>
-    
+
     <script src="main.js" type="text/javascript"></script>
 
 </html>

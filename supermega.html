@@ -2,9 +2,15 @@
 <html>
 
 	<head>
-		<title>TheRoboticCheese | Works</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<title>SuperMega | TheRoboticCheese </title>
         <link href= "main.css" rel="stylesheet"type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+
         <link rel= "shortcut icon" type ="image/png" href="logoIcon.png">
 	</head>
 
@@ -13,52 +19,134 @@
             <nav>
                 <ul>
                     <li class="logo"><a href="index.html" class="selected">TheRoboticCheese Logo</a></li>
-                    <li ><a href="works.html" class="selected">Works</a></li>
-                    <li ><a href="https://theroboticcheese.company.site" class="selected">Store</a></li>
-                    <li ><a href="about.html" class="selected">Updates</a></li>
-                    <li ><a href="about.html" class="selected">Contact & About</a></li>
+                </ul>
+
+                <ul class="burger">
+                    <li class="burger_line">
+                    </li><li class="burger_line">
+                    </li><li class="burger_line"></li>
                 </ul>
                 
-                <ul class="social_icons">
-                    <li class="icon youtube"><a href="https://www.youtube.com/user/TheRoboticCheese">Youtube</a></li>
-                    <li class="icon twitter"><a href="https://twitter.com/TheRoboCheese">Twitter</a></li>
-                    <li class="icon instagram"><a href="https://www.instagram.com/theroboticcheese/">Instagram</a></li>
-                    <li class="icon patreon"><a href ="https://www.patreon.com/theroboticcheese">Patreon</a></li>
-                </ul>              
+
+                <ul class = "nav_section">
+                    <ul class = "nav_links">
+                        <li class="links"><a href="index.html#home" >Home</a></li>
+                        <li  class="links"><a href="#works" class="selected">Works</a></li>
+                        <li class="links"><a href="index.html#updates" >Updates</a></li>
+                        <li class="links"><a href="index.html#contact" >Contact & About</a></li>
+                    </ul>
+                    <ul class = "social_icons">
+                        <li class="icon youtube"><a href="https://www.youtube.com/user/TheRoboticCheese" target="_blank">Youtube</a></li>
+                        <li class="icon twitter"><a href="https://twitter.com/TheRoboCheese" target="_blank">Twitter</a></li>
+                        <li class="icon instagram"><a href="https://www.instagram.com/theroboticcheese/" target="_blank">Instagram</a></li>
+                        <li class="icon patreon"><a href ="https://www.patreon.com/theroboticcheese" target="_blank">Patreon</a></li>
+                    </ul>
+                </ul>
+
+                
+                
             </nav>
         </header>
+        <div class = "overlay"></div>
+        <div class= "padding"></div>
 
-        <div class="page_header">
-            <h2>SUPERMEGA</h2>
-            <p>Animated shorts of the funny YouTube men; Matt Watson and Ryan Magee.</p> 
+        <div id="home" class="vidWindow">
+            <ul class="theme_title">
+                <img class="theme_logo" src="Assets/sm/smlogo.png" alt="SuperMega">
+                <!--<li class="line"></li>-->
+                <li><a>Fan animations of the funny YouTube men</a></li>
+                
+            </ul>
             
-            
-            <div class="color-overlay"></div>
-            <div class= "bg_image video_icon2"></div>
+            <ul class="title_gradient"></ul>
 
+            <video autoplay loop muted>
+                <source src="Assets/SM/bear.mp4" type="video/mp4">
+            </video>
         </div>
+        
+        <div class="video_tab section">
+            <video class="video_player" controls="controls" poster="tbnl2.png" controlsList="nodownload" >
+                <source src="Assets/SM/bear.mp4" type="video/mp4">
+            </video>
+            <ul class="video_info">
+                <h1>NOT IN FRONT OF THE FANS</h1>
+                <li><a>There's no fans out here-</a></li>
+            </ul>
+        </div>
+        
 
-            <iframe 
-                width="560" height="315" 
-                src="https://www.youtube.com/embed/T2GuxwPjlPA?rel=0" 
+        <div class="video_tab section">
+            <iframe class="video_player"
+                
+                src="https://www.youtube-nocookie.com/embed/QV1xGaDl5u0?rel=0" 
+                title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
-
-            ></iframe>
+                allowfullscreen>
+            </iframe>
+            <ul class="video_info">
+                <h1>NOT IN FRONT OF THE FANS</h1>
+                <li><a>There's no fans out here-</a></li>
+            </ul>
         </div>
-        </div>
 
-            <iframe 
-                width="560" height="315" 
+        <div class="video_tab section">
+            <iframe class="video_player"
+
                 src="https://www.youtube.com/embed/Qz4-ibB-3Bc?rel=0" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
-
             ></iframe>
+            <ul class="video_info">
+                <h1>RUNESCAPE GF</h1>
+                <li><a>I am broken...</a></li>
+            </ul>
+        </div>
+        
+        <div class="video_tab section">
+            
+            <iframe class="video_player"
+                src="https://www.youtube.com/embed/T2GuxwPjlPA?rel=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+            ></iframe>
+            <ul class="video_info">
+                <h1>THE BOYS FIND A SEGWAY</h1>
+                <li><a>That was a great segway!</a></li>
+            </ul>
         </div>
 
+
+
+
+
+        <div id="works" class="section">
+            <div>
+                <div class="title">
+                    <h2><a href="works.html">Other Works</a></h2>
+                    <p class = "desc"><a href="works.html">Projects by yours truly</a></p> 
+                </div>
+            </div>
+            <div class = "works">
+                <ul>
+                    <li>
+                        <div class = "tag"> NEW!</div>
+                        <div class ="works_link video_icon1"><a href="usagiandkaeru.html"></a></div>
+
+                    </li><li>
+                        
+                        <div class ="works_link video_icon2"><a href="supermega.html"></a></div>          
+
+                    </li><li>      
+
+                        <div class ="works_link video_icon3"><a href="gamegrumps.html"></a></div>              
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <footer>
             <ul class="footeralign">
@@ -92,5 +180,7 @@
             </ul>
         </footer>
 	</body>
+
+    <script src="main.js" type="text/javascript"></script>
 
 </html>
