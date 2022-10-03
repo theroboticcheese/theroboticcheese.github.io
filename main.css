@@ -9,6 +9,11 @@ body{
 	list-style: none;
 
 }
+header a{
+	background-color: orange;
+	width: 100%;
+	height: 100%;
+}
 
 header ul{
 	z-index: 100;
@@ -53,9 +58,9 @@ header .logo:hover{
 	z-index: -100;
 	position: absolute;
 	top: 0;
-	background-color: black;
+	background-color: red;
 	width: 100%;
-	height: 100vw;
+	height: 50vw;
 }
 /* mobile styling */
 @media only screen and (max-width: 100vh){
@@ -63,7 +68,8 @@ header .logo:hover{
 		transition: 0.5s;
 	}
 	.banner-image{
-		background-color: white;
+		background-color: blue;
+		height: 100vw;
 	}
 	header li{
 		width: 45vw;
